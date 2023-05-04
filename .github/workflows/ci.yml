@@ -1,0 +1,10 @@
+name: End-to-End-tests
+on: push
+jobs:
+  cypress-run:
+    run-on: ubuntu-22.04
+    step: 
+      name: chechout
+      user: actions/chekou@v3
+      name: cypress run 
+      user: cypress-io/github-action@v5
